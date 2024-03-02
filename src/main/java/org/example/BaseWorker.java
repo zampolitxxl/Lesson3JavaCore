@@ -3,7 +3,7 @@ package org.example;
 import java.util.Comparator;
 import java.util.Iterator;
 
-public  class BaseWorker implements  Comparable<BaseWorker>, Sorter, Iterable<BaseWorker> {
+public  class BaseWorker implements  Comparable<BaseWorker>, Sorter {
     public double hourSalary;
 
     public double fixSalary;
@@ -36,6 +36,7 @@ public  class BaseWorker implements  Comparable<BaseWorker>, Sorter, Iterable<Ba
 
 
 
+   /*
     public static void bubbleSort(BaseWorker[] sortArr){
         for (int i = 0; i < sortArr.length - 1; i++) {
             for(int j = 0; j < sortArr.length - i - 1; j++) {
@@ -49,6 +50,8 @@ public  class BaseWorker implements  Comparable<BaseWorker>, Sorter, Iterable<Ba
 
     }
 
+    */
+
     @Override
     public int compareTo(BaseWorker o) {
         int a = (int) (this.getFixSalary()-o.getFixSalary());
@@ -61,11 +64,13 @@ public  class BaseWorker implements  Comparable<BaseWorker>, Sorter, Iterable<Ba
         return (int) (o1.fixSalary-o2.fixSalary);
     }
 
-
+    /*
     @Override
     public Iterator<BaseWorker> iterator() {
         return null;
     }
+
+     */
 }
 
 
